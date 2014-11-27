@@ -1,0 +1,12 @@
+﻿body {
+}
+.MasterHeader{
+    font-size:18px;
+    font-weight:bold;
+}
+.masterbtn {
+    height:50px;
+    width:14%;
+    background-color:orange;
+    font-weight:bold;
+}

@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>UTD Cuisine</title>
+    <link rel="shortcut icon" type="image/ico" href="utd-bw.gif" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="./Style/Style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width:980px">
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:10%;"><div id="logo">
+                        <a href="http://www.utdallas.edu/">
+                        <img src="/Images/UT_Dallas.jpg" alt="UTD Logo" width="95" height="40" /></a> 
+                        </div>
+                    </td>
+                    <td style="text-align:center;"><div id="wordmark" class="MasterHeader">UTD CUISINE</div></td>
+                    <td style="width:20%;">
+                        <asp:Button runat="server" ID="btn_signin" Text="Sign In" OnClick="btn_signin_Click"/>
+                        <asp:Button runat="server" ID="btn_signup" Text="Sign Up" OnClick="btn_signup_Click"/>
+                        <asp:Button runat="server" ID="btn_logout" Text="Log Out" Visible="false" OnClick="btn_logout_Click"/>
+
+                    </td>
+                </tr>
+                
+            </table>
+            
+
+            
+            <div>
+                <asp:Button runat="server" ID="btn_home" CssClass="masterbtn" Text="HOME" OnClick="btn_home_Click"></asp:Button>
+                <asp:Button runat="server" ID="btn_order" CssClass="masterbtn" Text="ORDER ONLINE" OnClick="btn_order_Click"></asp:Button>
+                <asp:Button runat="server" ID="btn_menu" CssClass="masterbtn" Text="MENU" OnClick="btn_menu_Click"></asp:Button>
+                <asp:Button runat="server" ID="btn_tracker" CssClass="masterbtn" Text="TRACKER" OnClick="btn_tracker_Click"></asp:Button>
+                <asp:Button runat="server" ID="btn_location" CssClass="masterbtn" Text="LOCATION" OnClick="btn_location_Click"></asp:Button>
+                <asp:Button runat="server" ID="btn_favorite" CssClass="masterbtn" Text="FAVIOURITES" OnClick="btn_favorite_Click"></asp:Button>
+                <asp:Button runat="server" ID="btn_profile" CssClass="masterbtn" Text="MY PROFILE" OnClick="btn_profile_Click"></asp:Button>
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="Main" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
